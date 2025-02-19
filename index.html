@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Дизайн, который работает</title>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Josefin+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header id="header">
+        <div class="nav-container">
+            <nav class="left-nav">
+                <a href="#home">Главная</a>
+                <a href="#services">Услуги</a>
+                <a href="#works">Работы</a>
+            </nav>
+            
+            <div class="logo" aria-label="Vstudio">Vstudio</div>
+            
+            <nav class="right-nav">
+                <a href="#about">О нас</a>
+                <a href="#reviews">Отзывы</a>
+                <a href="#contacts">Контакты</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero-section">
+        <h1 class="hero-title">Дизайн, который работает</h1>
+        <div class="scroll-down" onclick="scrollToNextSection()">
+            <div class="arrow"></div>
+        </div>
+    </section>
+
+    <section id="next-section" aria-label="О дизайне">
+        <h2 class="section-title">Что такое дизайн?</h2>
+        <div class="accordion-container">
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <h3>Дизайн — это язык, который говорит за ваш бизнес</h3>
+                    <div class="accordion-toggle"></div>
+                </div>
+                <div class="accordion-content">
+                    <p>Он превращает идеи в интуитивно понятные интерфейсы, эмоции — в визуальные образы, а потребности клиентов — в решения.</p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <h3>Увеличивает конверсию</h3>
+                    <div class="accordion-toggle"></div>
+                </div>
+                <div class="accordion-content">
+                    <p>Продуманный UX ведет пользователя к цели без лишних шагов.</p>
+                </div>
+            </div>
+    
+     
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <h3>Выделяет среди конкурентов </h3>
+                    <div class="accordion-toggle"></div>
+                </div>
+                <div class="accordion-content">
+                    <p>Уникальный дизайн — это лицо компании, которое запоминается.</p>
+                </div>
+            </div>
+    
+       
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <h3>Строит доверие</h3>
+                    <div class="accordion-toggle"></div>
+                </div>
+                <div class="accordion-content">
+                    <p>Профессиональный интерфейс ассоциируется с надежностью.</p>
+                </div>
+            </div>
+    
+    
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <h3>Экономит время и деньги</h3>
+                    <div class="accordion-toggle"></div>
+                </div>
+                <div class="accordion-content">
+                    <p>Хороший дизайн с первого раза решает проблемы, а не создает новые.</p>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
