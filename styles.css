@@ -237,3 +237,67 @@ nav a:hover {
     .accordion-item h3 { font-size: 1.2rem; }
     .accordion-content p { font-size: 0.9rem; }
 }
+:root {
+    --bg-color: #0C0C0C;
+    --text-color: #B4CEE4;
+    --accent-color: #A5ADFF;
+    --hover-color: #F15053;
+    --header-bg: #0C0C0C;
+    --shadow: 3px 3px 3px #000, -3px -3px 3px #292929;
+}
+
+.light-theme {
+    --bg-color: #ecf0f3;
+    --text-color: #2d3436;
+    --accent-color: #4a69bd;
+    --hover-color: #e55039;
+    --header-bg: #ecf0f3;
+    --shadow: 3px 3px 10px rgba(0,0,0,0.1);
+}
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+    transition: background 0.3s, color 0.3s;
+}
+
+header {
+    background: var(--header-bg);
+}
+
+nav a {
+    color: var(--text-color);
+}
+
+nav a:hover {
+    color: var(--hover-color);
+}
+
+.logo {
+    color: var(--accent-color);
+}
+
+.accordion-item {
+    background: var(--bg-color);
+    box-shadow: var(--shadow);
+}
+
+.accordion-item h3 {
+    color: var(--accent-color);
+}
+
+.theme-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    margin-right: 20px;
+}
+
+.theme-icon {
+    font-size: 24px;
+    transition: transform 0.3s;
+}
+
+.theme-btn:hover .theme-icon {
+    transform: rotate(15deg);
+}

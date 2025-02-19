@@ -29,3 +29,19 @@ document.addEventListener('click', (e) => {
         });
     }
 });
+document.addEventListener('DOMContentLoaded', () => {
+    const themeToggle = document.getElementById('theme-toggle');
+    const themeIcon = themeToggle.querySelector('.theme-icon');
+    
+    const savedTheme = localStorage.getItem('theme') || 'dark';
+    const isDark = savedTheme === 'dark';
+    
+    document.body.classList.toggle('light-theme', !isDark);
+    themeIcon.textContent = isDark ? '🌙' : '🌞';
+
+    themeToggle.addEventListener('click', () => {
+        const isLight = document.body.classList.toggle('light-theme');
+        themeIcon.textContent = isLight ? '🌞' : '🌙';
+        localStorage.setItem('theme', isLight ? 'light' : 'dark');
+    });
+});
